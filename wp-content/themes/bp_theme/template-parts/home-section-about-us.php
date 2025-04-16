@@ -29,10 +29,18 @@ if ($subtitle || $title || $description || $try_button || $image_left_url): ?>
                         $link_url = $try_button['url'];
                         $link_title = $try_button['title'];
                         ?>
-                        <a class="theme-buttons__green" href="<?php echo esc_url($link_url); ?>">
+                        <a class="theme-buttons__green open-modal" style="cursor:pointer;">
                             <?php echo esc_html($link_title); ?>
                         </a>
                     <?php endif; ?>
+                    <!-- <?php if ($try_button):
+                        $link_url = $try_button['url'];
+                        $link_title = $try_button['title'];
+                        ?>
+                        <a class="theme-buttons__green" href="<?php echo esc_url($link_url); ?>">
+                            <?php echo esc_html($link_title); ?>
+                        </a>
+                    <?php endif; ?> -->
                 </div>
             </div>
 

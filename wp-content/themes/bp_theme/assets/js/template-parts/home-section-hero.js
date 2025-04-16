@@ -20,7 +20,7 @@ jQuery(function ($) {
         heightRatio: 0.5,
         perPage: 3,
         autoScroll: {
-          speed: 0.7,
+          speed: 0.5,
           pauseOnHover: false,
         },
         pagination: false,
@@ -57,7 +57,7 @@ jQuery(function ($) {
         heightRatio: 0.5,
         perPage: 3,
         autoScroll: {
-          speed: -0.7,
+          speed: -0.5,
           pauseOnHover: false,
         },
         pagination: false,

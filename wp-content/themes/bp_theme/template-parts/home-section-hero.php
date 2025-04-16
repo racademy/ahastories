@@ -42,15 +42,23 @@ $footer_cta_btn2 = get_field('footer_cta_btn2');
                     <?php if ($footer_cta_btn1):
                         $link1_url = $footer_cta_btn1['url'];
                         $link1_title = $footer_cta_btn1['title']; ?>
-                        <a href="<?php echo esc_url($link1_url); ?>" class="theme-buttons__green">
+                        <a class="theme-buttons__green open-modal" style="cursor:pointer;">
                             <?php echo esc_html($link1_title); ?>
                         </a>
                     <?php endif; ?>
 
+                    <!-- <?php if ($footer_cta_btn1):
+                        $link1_url = $footer_cta_btn1['url'];
+                        $link1_title = $footer_cta_btn1['title']; ?>
+                        <a href="<?php echo esc_url($link1_url); ?>" class="theme-buttons__green">
+                            <?php echo esc_html($link1_title); ?>
+                        </a>
+                    <?php endif; ?> -->
+
                     <?php if ($footer_cta_btn2):
                         $link2_url = $footer_cta_btn2['url'];
                         $link2_title = $footer_cta_btn2['title']; ?>
-                        <a href="<?php echo esc_url($link2_url); ?>" class="theme-buttons__transparent">
+                        <a href="<?php echo esc_url($link2_url); ?>" class="theme-buttons__transparent" target="_blank">
                             <?php echo esc_html($link2_title); ?>
                         </a>
                     <?php endif; ?>

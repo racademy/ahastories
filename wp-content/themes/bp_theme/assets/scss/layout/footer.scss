@@ -258,6 +258,10 @@ body.modal-open {
                         color: #00000099;
                     }
 
+                    .select2-container {
+                        width: 100% !important;
+                    }
+
                     textarea {
                         padding: 12px 14px;
                         height: 154px;
@@ -344,6 +348,29 @@ body.modal-open {
             z-index: 100;
         }
     }
+}
+
+.select2-container .select2-selection--single {
+    height: auto !important;
+    padding: 10px 5px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-weight: 400 !important;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: Arial, sans-serif !important;
+    color: #00000099;
+}
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid #f1f2f2;
+    border-radius: 8px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 9px;
+    right: 10px;
 }
 
 .wpcf7 form.invalid .wpcf7-response-output,
