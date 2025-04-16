@@ -52,9 +52,12 @@ $labelHero = get_field('programmes_label');
 
                 <?php if ($button): ?>
                     <div class="theme-buttons">
-                        <a href="<?php echo esc_url($button['url']); ?>" class="theme-buttons__green">
+                        <a class="theme-buttons__green open-modal" style="cursor:pointer;">
                             <?php echo esc_html($button['title']); ?>
                         </a>
+                        <!-- <a href="<?php echo esc_url($button['url']); ?>" class="theme-buttons__green">
+                            <?php echo esc_html($button['title']); ?>
+                        </a> -->
                     </div>
                 <?php endif; ?>
             </div>

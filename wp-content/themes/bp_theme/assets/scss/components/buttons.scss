@@ -16,6 +16,7 @@
         justify-content: center;
         border: 1px solid;
         font-weight: 700;
+        cursor: pointer;
 
         &:hover {
             background-color: transparent;
@@ -36,6 +37,7 @@
         justify-content: center;
         border: 1px solid;
         font-weight: 700;
+        cursor: pointer;
 
         &:hover {
             background-color: var(--green);
@@ -56,6 +58,7 @@
         font-weight: 700;
         padding: 14px 24px;
         border: 1px solid var(--black);
+        cursor: pointer;
 
         &:hover {
             background-color: var(--white);
