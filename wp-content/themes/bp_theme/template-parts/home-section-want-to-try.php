@@ -21,11 +21,21 @@ if ($cta_title || $cta_description || $cta_btn_text): ?>
                     $link_url = $footer_cta_btn['url'];
                     $link_title = $footer_cta_btn['title']; ?>
                     <div class="theme-buttons">
-                        <a href="<?php echo esc_url($link_url); ?>" class="theme-buttons__black">
+                        <a class="theme-buttons__black open-modal" style="cursor:pointer;">
                             <?php echo esc_html($link_title); ?>
                         </a>
                     </div>
                 <?php endif; ?>
+
+                <!-- <?php if ($footer_cta_btn):
+                    $link_url = $footer_cta_btn['url'];
+                    $link_title = $footer_cta_btn['title']; ?>
+                    <div class="theme-buttons">
+                        <a href="<?php echo esc_url($link_url); ?>" class="theme-buttons__black">
+                            <?php echo esc_html($link_title); ?>
+                        </a>
+                    </div>
+                <?php endif; ?> -->
             </div>
         </div>
     </section>

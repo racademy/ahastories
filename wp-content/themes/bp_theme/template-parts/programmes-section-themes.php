@@ -44,10 +44,12 @@ $button = get_field('theme_try_button');
 
             <?php if ($button): ?>
                 <div class="theme-buttons">
-                    <a class="theme-buttons__green" href="<?php echo esc_url($button['url']); ?>"
-                        target="<?php echo esc_attr($button['target'] ?: '_self'); ?>">
+                    <a class="theme-buttons__green open-modal" style="cursor:pointer;">
                         <?php echo esc_html($button['title']); ?>
                     </a>
+                    <!-- <a class="theme-buttons__green" href="<?php echo esc_url($button['url']); ?>">
+                        <?php echo esc_html($button['title']); ?>
+                    </a> -->
                 </div>
             <?php endif; ?>
         </div>

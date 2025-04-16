@@ -10,7 +10,7 @@
 
 <body <?php body_class(); ?>>
 
-    <?php get_template_part('template-parts/section', 'page-top'); ?>
+    <!-- <?php get_template_part('template-parts/section', 'page-top'); ?> -->
 
     <header>
         <div class="container">

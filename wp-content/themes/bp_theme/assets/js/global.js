@@ -92,6 +92,8 @@ jQuery(document).ready(function ($) {
   // Modal openining and closing
   const openModalBtns = document.querySelectorAll(".open-modal");
   const modal = document.getElementById("open-modal");
+  const modalForm = document.querySelector(".modal-form");
+  let originalFormHTML = modalForm ? modalForm.innerHTML : "";
 
   const openModal = () => {
     modal.style.display = "flex";
@@ -101,6 +103,10 @@ jQuery(document).ready(function ($) {
   const closeModal = () => {
     modal.style.display = "none";
     document.body.classList.remove("modal-open");
+
+    if (modalForm) {
+      modalForm.innerHTML = originalFormHTML;
+    }
   };
 
   openModalBtns.forEach((btn) => {
