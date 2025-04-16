@@ -1,0 +1,44 @@
+.default-hero {
+    background: url("/wp-content/uploads/2025/04/BG.png");
+    background-color: var(--bg-grey);
+
+    &__holder {
+        h1 {
+            padding: 80px 0;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.default-template {
+    padding: 96px 0 48px 0;
+
+    &__holder {
+        max-width: 1070px;
+
+        h3 {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 140%;
+        }
+
+        h4 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 140%;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 180%;
+            opacity: 0.8;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .default-template {
+        padding: 36px 0 24px 0;
+    }
+}

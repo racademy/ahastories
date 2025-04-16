@@ -1,0 +1,104 @@
+.programmes-template-default {
+    .home-section-programmes {
+        &__holder {
+            padding-bottom: 48px;
+
+            &--titles {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+                text-transform: uppercase;
+                padding: 96px 0 48px 0;
+
+                p {
+                    font-weight: 700;
+                }
+            }
+
+            &--programmes {
+                display: flex;
+                flex-direction: row;
+                gap: 24px;
+                align-items: center;
+
+                .programme-card {
+                    width: 50%;
+                    background-color: var(--bg-grey);
+                    padding: 40px;
+                    border-radius: 24px;
+                    text-align: center;
+                    color: var(--black);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+                    text-decoration: unset;
+
+                    &__content {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 14px;
+                        align-items: center;
+
+                        &--category {
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 120%;
+                            padding: 10px 16px;
+                            background-color: var(--green);
+                            width: fit-content;
+                            border-radius: 36px;
+                        }
+                    }
+                }
+            }
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .programmes-template-default .background-element-two {
+        right: 10px;
+        margin-left: unset;
+        margin-top: -80px;
+    }
+}
+@media (max-width: 768px) {
+    .programmes-template-default {
+        .home-section-programmes {
+            &__holder {
+                padding-bottom: 36px;
+
+                &--programmes {
+                    flex-direction: column;
+
+                    .programme-card {
+                        width: 100%;
+                        padding: 20px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .programmes-template-default {
+        .home-section-programmes {
+            .theme-buttons {
+                &__transparent {
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    .programmes-template-default .background-element-two {
+        margin-top: -120px;
+    }
+}

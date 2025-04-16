@@ -1,0 +1,97 @@
+h1 {
+    font-family: "Faro-Display" !important;
+    font-size: 58px;
+    line-height: 110%;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Faro-Display" !important;
+    font-size: 40px;
+    line-height: 130%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif !important;
+    margin: 0;
+}
+
+.body-regular-one {
+    font-size: 18px;
+    line-height: 180%;
+}
+
+.body-bold-one-140 {
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.body-bold-one-120 {
+    font-size: 18px;
+    line-height: 120%;
+}
+
+.body-regular-two,
+.caption-bold-caps {
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.body-regular-three {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.caption-regular-caps {
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.button {
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.title-one {
+    font-size: 28px;
+    line-height: 140%;
+    font-weight: 700;
+}
+
+.title-two {
+    font-size: 20px;
+    line-height: 140%;
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1024px) {
+    .body-regular-one {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .title-one {
+        font-size: 24px;
+    }
+}

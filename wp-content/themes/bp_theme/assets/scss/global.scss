@@ -1,0 +1,54 @@
+// Import layout styles
+@use "layout/not-found";
+@use "layout/header";
+@use "layout/footer";
+@use "layout/container";
+
+// Import fonts & colors
+@use "fonts/fonts";
+@use "colors/colors";
+
+// Import components
+@use "components/buttons";
+@use "components/typography";
+
+html :where(.wp-block) {
+    max-width: 100%;
+}
+
+.programmes-template-default {
+    .background-element-three {
+        top: -60px;
+        right: unset;
+        left: 10%;
+    }
+
+    .background-element-two {
+        right: 18%;
+        margin-left: unset;
+        margin-top: unset;
+    }
+}
+
+.offer-banner {
+    padding: 10px 0;
+    background-color: var(--green);
+    text-align: center;
+    border-bottom: 1px solid var(--black);
+
+    &__holder {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}

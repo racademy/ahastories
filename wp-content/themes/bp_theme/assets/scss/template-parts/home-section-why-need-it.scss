@@ -1,0 +1,118 @@
+.background-element-three {
+    position: absolute;
+    top: -70px;
+    right: 10%;
+    z-index: 1;
+    will-change: transform;
+    transition: transform 0.1s ease-out;
+    pointer-events: none;
+}
+
+.home-why-need-it {
+    padding: 48px 0;
+
+    &__holder {
+        &--titles {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            gap: 12px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 0 0 48px 0;
+            position: relative;
+
+            p {
+                font-weight: 700;
+            }
+
+            h2 {
+                text-transform: uppercase;
+            }
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &__reasons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1%;
+
+        &--reason {
+            width: 26%;
+            background-color: var(--white);
+            padding: 40px;
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            box-shadow: 0 4px 4px #0000000f;
+            align-items: center;
+            border-radius: 24px;
+            margin-bottom: 24px;
+
+            .reason-icon {
+                width: 48px;
+                height: 48px;
+                background-color: var(--green);
+                border-radius: 100%;
+                display: flex;
+                text-align: center;
+
+                img {
+                    padding: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1240px) {
+    .home-why-need-it {
+        &__reasons {
+            &--reason {
+                width: 25%;
+                padding: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .home-why-need-it {
+        &__reasons {
+            justify-content: space-evenly;
+
+            &--reason {
+                width: 40%;
+                padding: 30px 15px;
+            }
+        }
+    }
+
+    img.background-element-three {
+        scale: 0.8;
+        right: 15px;
+        top: -85px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-why-need-it {
+        padding: 36px 0;
+
+        &__reasons {
+            &--reason {
+                width: 100%;
+            }
+        }
+    }
+
+    img.background-element-three {
+        top: -180px;
+    }
+}
