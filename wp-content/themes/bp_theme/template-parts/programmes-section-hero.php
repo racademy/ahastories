@@ -3,17 +3,27 @@ $title = get_field('programmes_section_title');
 $subtitle = get_field('programmes_section_subtitle');
 $image_id = get_field('programmes_image');
 $image_url = $image_id ? wp_get_attachment_image_url($image_id, 'full') : '';
-$video = get_field('programmes_video');
-$video_url = $video ? $video['url'] : '';
 $benefits = get_field('programmes_benefits');
+$video_url = get_field('programmes_video_link');
 $button = get_field('benefit_try_button');
 $bg_image_id = get_field('bg_image_fourth');
 $bg_image_url = $bg_image_id ? wp_get_attachment_image_url($bg_image_id, 'full') : '';
 $categories = get_the_terms(get_the_ID(), 'programme_category');
 $labelHero = get_field('programmes_label');
+
+$has_ruosiama = false;
+
+if ($categories && !is_wp_error($categories)) {
+    foreach ($categories as $category) {
+        if ($category->slug === 'ruosiama') {
+            $has_ruosiama = true;
+            break;
+        }
+    }
+}
 ?>
 
-<section class="programmes-hero">
+<section class="programmes-hero <?php echo $has_ruosiama ? 'has-ruosiama' : ''; ?>">
     <div class="container">
         <div class="programmes-hero__holder">
             <div class="programmes-hero__content">
@@ -67,7 +77,7 @@ $labelHero = get_field('programmes_label');
                     <div class="programmes-hero__image"
                         style="background-image: url('<?php echo esc_url($image_url); ?>');">
                         <?php if ($video_url): ?>
-                            <a href="<?php echo esc_url($video_url); ?>" data-lity class="play-button">
+                            <a href="<?php echo $video_url; ?>" data-lity class="play-button">
                                 <img src="/wp-content/uploads/2025/04/Group-6258.svg" alt="Play Video">
                             </a>
                         <?php endif; ?>

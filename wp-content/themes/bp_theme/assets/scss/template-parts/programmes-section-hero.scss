@@ -116,6 +116,25 @@ span.programmes-hero__image--label.body-bold-one-120 {
     will-change: transform;
 }
 
+section.programmes-hero.has-ruosiama {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+section.programmes-hero.has-ruosiama::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));
+    z-index: 2;
+    pointer-events: none;
+}
+
 @media (max-width: 1024px) {
     .programmes-hero {
         padding: 36px 0;
