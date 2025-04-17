@@ -32,13 +32,9 @@ if (function_exists('acf_register_block_type')) {
                 ],
                 'return_format' => 'id',
             ])
-            ->addFile('programmes_video', [
-                'label' => 'Programmes Video',
-                'wrapper' => [
-                    'width' => '50',
-                ],
-                'return_format' => 'array',
-                'library' => 'all',
+            ->addText('programmes_video_link', [
+                'label' => 'Programmes Video Link',
+                'wrapper' => ['width' => '50'],
             ])
             ->addText('programmes_label', [
                 'label' => 'Label on hero image pictures',
