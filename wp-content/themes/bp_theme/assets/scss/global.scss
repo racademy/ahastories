@@ -12,6 +12,10 @@
 @use "components/buttons";
 @use "components/typography";
 
+* {
+    font-synthesis: none;
+}
+
 html :where(.wp-block) {
     max-width: 100%;
 }
