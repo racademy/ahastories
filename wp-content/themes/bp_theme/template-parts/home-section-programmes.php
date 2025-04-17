@@ -4,7 +4,7 @@ $title = get_field('home_page_programmes_section_title');
 $programmes = get_field('selected_programmes');
 ?>
 
-<section class="home-section-programmes">
+<section class="home-section-programmes" id="programos">
     <div class="container">
         <div class="home-section-programmes__holder">
             <div class="home-section-programmes__holder--titles">
